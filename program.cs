@@ -1,4 +1,4 @@
-﻿string[] old = ["hello", "3", "bold"];
+﻿string[] old = {"hello", "3", "bold","tr"};
 int count = 0;
 
 for (int i = 0; i < old.Length; i++)
@@ -9,7 +9,7 @@ for (int i = 0; i < old.Length; i++)
     }
 }
 
-string[] mem = new Array(count);
+string[] mem = new string[count];
 int j = 0;
 
 for (int i = 0; i < old.Length; i++)
@@ -17,7 +17,7 @@ for (int i = 0; i < old.Length; i++)
     if (old[i].Length <= 3)
     {
         mem[j] = old[i];
-        Consele.WriteLine($"{mem[j]}, ");
+        Console.WriteLine($"{mem[j]}, ");
         j++;
     }
 }
